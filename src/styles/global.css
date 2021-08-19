@@ -52,3 +52,10 @@ nav a:hover {
   color: orangered;
   font-weight: 700;
 }
+
+.active {
+  color: orange;
+  background-color: #c5e5ed;
+  border-top: 5px solid #00bff3;
+  border-bottom: 5px solid #00bff3;
+}
