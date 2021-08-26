@@ -1,9 +1,15 @@
 /* Global */
 
+:root {
+  --ffamily: 'Roboto', sans-serif;
+  --bgcolor: gold;
+  --corange: orangered;
+}
+
 nav {
   margin: 1rem auto;
+  padding: 1rem;
   background-color: #eee;
-  background-image: url("https://assets.codepen.io/296057/lil-graydots.png");
   border-top: 3px solid #00bff3;
   border-bottom: 3px solid #00bff3;
 }
@@ -17,27 +23,35 @@ nav ul {
   list-style-type: none;
 }
 
+nav li {
+  padding: 0.5rem 1rem;
+}
+
+nav li:hover {
+  color: var(--corange);
+  background-color: var(--bgcolor);
+}
+
 nav a {
   display: block;
   padding: 0.5rem 1rem;
-  color: #00bff3;
-  font-weight: 600;
+  color: deepskyblue;
+  font-weight: 400;
   text-decoration: none;
+  border: 1px solid red;
 }
 
 nav a:focus {
   color: black;
-  background-color: #F0C808;
+  background-color: var(--bgcolor);
 }
 
 nav a:hover {
-  color: #ff583d;
-  background-color: #f0c808;
-  background-image: url("https://assets.codepen.io/296057/lil-yellowdots.png");
+  color: orangered;
 }
 
 .active {
-  color: #ff583d;
+  color: orange;
   background-color: #c5e5ed;
-  background-image: url("https://assets.codepen.io/296057/lil-bluedots.png");
+
 }
